@@ -1,23 +1,34 @@
-.main-page {
-    margin: 0;
-    padding: 0;
-    width: 100%;
+#root {
+    height: 100vh;
+    width: 100vw;
 }
 
+.body{
+}
+
+.main-page {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
 .gradient-background {
-    background: linear-gradient(135deg, #8c5d1f, #f4bb15, #da5a5e, #7c2c4e);
-    background-size: 240% 240%;
-    animation: gradient-animation 4s ease infinite;
+  background: linear-gradient(252deg,#8a16b7,#ca0054,#0f4488);
+  background-size: 180% 180%;
+  animation: gradient-animation 15s ease infinite;
 }
 
 @keyframes gradient-animation {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }

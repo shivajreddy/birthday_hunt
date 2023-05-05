@@ -1,11 +1,15 @@
 import './AnimatedBackground.css'
+// import HeartEmoji from './HeartEmoji.jsx'
+import { FallingEmojis } from 'falling-emojis';
+
+
 
 const AnimatedBackground = () => {
 	return (
 		<div className="main-page gradient-background">
-      
-      <h1> test gg</h1>
-  
+			
+			<FallingEmojis emoji={'❤️'} />
+		
 		</div>
 	)
 }
