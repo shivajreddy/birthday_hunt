@@ -16,13 +16,12 @@ const Answer = ({correctAnswer, onAnswer, answer, setAnswer}) => {
 	}
 	
 	return (
-		<div>
+		<div className="answer">
 			
-			
-			<textarea onChange={handleTextChange} value={answer} className="answer"
-								rows={3} cols={20}/>
+			<textarea onChange={handleTextChange} value={answer} />
+			{/*<textarea onChange={handleTextChange} value={answer} rows={3} cols={20}/>*/}
 			{answer !== '' && (
-				<button onClick={handleSubmit}>Submit Answer</button>
+				<button className="submit-button" onClick={handleSubmit}>Submit Answer</button>
 			)}
 		
 		</div>

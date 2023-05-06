@@ -1,12 +1,13 @@
-import React from 'react';
+import React from 'react'
 
 const CongratsMessage = ({ score, totalQuestions }) => {
-  return (
-    <div>
-      <p>Time to get your gift!</p>
-      <p>Where is the last place you </p>
-    </div>
-  );
-};
+	return (
+		<div>
+			<h1 style={{ textAlign: 'center' }}>Time to get your gift!</h1>
+			<p style={{ textAlign: 'center' }}>Defense Of The Ancients</p>
+			<p style={{ textAlign: 'center' }}> lives here</p>
+		</div>
+	)
+}
 
-export default CongratsMessage;
+export default CongratsMessage

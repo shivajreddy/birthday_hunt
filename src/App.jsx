@@ -1,14 +1,20 @@
 import HomePage from './Components/HomePage.jsx'
 import BirthdayGame from './Components/BirthdayGame.jsx'
 import Game from './Components/Game.jsx'
+import './App.css'
+import { FallingEmojis } from 'falling-emojis'
 
 function App () {
 	
 	return (
 		<>
-			{/*<HomePage/>*/}
-			{/*<BirthdayGame/>*/}
-			<Game/>
+			<div className="gradient-background">
+				<FallingEmojis emoji={'🎂'} />
+				
+				{/*<HomePage/>*/}
+				{/*<BirthdayGame/>*/}
+				<Game/>
+			</div>
 		</>
 	)
 }

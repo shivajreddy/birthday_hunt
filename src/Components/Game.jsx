@@ -6,6 +6,7 @@ import Checkmark from './Checkmark'
 import NextQuestionButton from './NextQuestionButton'
 import CongratsButton from './CongratsButton.jsx'
 import CongratsMessage from './Congratsmessage.jsx'
+import './Game.css'
 
 const questions = [
 	{
@@ -21,12 +22,12 @@ const questions = [
 		answer: 'England Reddy',
 	},
 	{
-		question: 'Who loves the other person more, Shiva or England',
-		answer: 'Shiva',
+		question: "what did you eat yesterday for breakfast.",
+		answer: 'fruit',
 	},
 	{
-		question: "what did you eat yesterday for lunch.",
-		answer: '',
+		question: 'FINAL QUESTION: \n Who loves the other person more, Shiva or England',
+		answer: 'Shiva',
 	},
 	// Add more questions here
 ]
@@ -70,13 +71,7 @@ const Game = () => {
 	const currentQuestion = questions[currentQuestionIndex]
 	
 	return (
-		<div style={{
-			display: 'flex',
-			flexDirection: 'column',
-			alignItems: 'center',
-			justifyContent: 'center',
-			height: '100vh',
-		}}>
+		<div className="game">
 			<Title/>
 			<div style={{ width: '80%', margin: '2rem' }}>
 				{
