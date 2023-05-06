@@ -1,6 +1,7 @@
 .question{
-    font-size: 5em;
+    font-size: 2em;
     font-weight: bold;
     padding: 0px 20px 100px 20px;
 
 }
+/*style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '10vh' }}*/

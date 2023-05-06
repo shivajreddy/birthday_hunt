@@ -11,11 +11,12 @@
 // }
 //
 // export default Question
+import './Question.css'
 
 
 const Question = ({ question }) => {
   return (
-    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '50vh' }}>
+    <div className="question">
       <h2>{question}</h2>
     </div>
   );

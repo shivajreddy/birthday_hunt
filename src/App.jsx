@@ -11,8 +11,8 @@ function App () {
 			<div className="gradient-background">
 				<FallingEmojis emoji={'🎂'} />
 				
-				{/*<HomePage/>*/}
-				{/*<BirthdayGame/>*/}
+				{/*<Title/>*/}
+				
 				<Game/>
 			</div>
 		</>

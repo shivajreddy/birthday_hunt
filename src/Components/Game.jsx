@@ -10,20 +10,20 @@ import './Game.css'
 
 const questions = [
 	{
-		question: 'WHAT IS YOUR MAVAYA\'S NAME?',
-		answer: 'jayarami reddy',
-	},
-	{
-		question: 'WHAT IS YOUR ATHAYA\'S NAME?',
-		answer: 'Tulasi',
-	},
-	{
-		question: "What is my wife's name",
+		question: 'WHAT IS MY WIFE\'S NAME ?',
 		answer: 'England Reddy',
 	},
 	{
-		question: "what did you eat yesterday for breakfast.",
+		question: 'WHAT IS YOUR MAVAYA\'S NAME ?',
+		answer: 'jayarami reddy',
+	},
+	{
+		question: 'WHAT DID YOU EAT YESTERDAY FOR BREAKFAST ? ',
 		answer: 'fruit',
+	},
+	{
+		question: 'WHEN YOU SEE AS 10 MIN\'S I SEE HOW MANY ?',
+		answer: '2',
 	},
 	{
 		question: 'FINAL QUESTION: \n Who loves the other person more, Shiva or England',
@@ -94,9 +94,9 @@ const Game = () => {
 				}
 				{showCongratsButton &&
 					<div>
-					<CongratsMessage score={score} totalQuestions={questions.length}/>
+						<CongratsMessage score={score} totalQuestions={questions.length}/>
 					</div>
-					}
+				}
 			</div>
 		</div>
 	)
