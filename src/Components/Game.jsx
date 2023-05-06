@@ -17,8 +17,16 @@ const questions = [
 		answer: 'Tulasi',
 	},
 	{
-		question: 'What is the largest planet in our solar system?',
-		answer: 'Jupiter',
+		question: "What is my wife's name",
+		answer: 'England Reddy',
+	},
+	{
+		question: 'Who loves the other person more, Shiva or England',
+		answer: 'Shiva',
+	},
+	{
+		question: "what did you eat yesterday for lunch.",
+		answer: '',
 	},
 	// Add more questions here
 ]
@@ -71,19 +79,29 @@ const Game = () => {
 		}}>
 			<Title/>
 			<div style={{ width: '80%', margin: '2rem' }}>
-				<Question question={currentQuestion.question}/>
-				<Answer correctAnswer={currentQuestion.answer} onAnswer={handleAnswer}
-								answer={answer} setAnswer={setAnswer}/>
-				{showCheckmark && <Checkmark/>}
-				{showNextButton && <NextQuestionButton onNext={handleNextQuestion}/>}
+				{
+					!showCongratsButton &&
+					<div>
+						<Question question={currentQuestion.question}/>
+						<Answer correctAnswer={currentQuestion.answer}
+										onAnswer={handleAnswer}
+										answer={answer} setAnswer={setAnswer}/>
+						{showCheckmark && <Checkmark/>}
+						{showNextButton &&
+							<NextQuestionButton onNext={handleNextQuestion}/>}
+						{showCongratsButton &&
+							<CongratsButton onCongratsClick={handleCongratsClick}/>}
+						<div style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>
+							Score: {score}/{questions.length}
+						</div>
+					
+					</div>
+				}
 				{showCongratsButton &&
-					<CongratsButton onCongratsClick={handleCongratsClick}/>}
-				{showCongratsMessage &&
-					<CongratsMessage score={score} totalQuestions={questions.length}/>}
-			
-			</div>
-			<div style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>
-				Score: {score}/{questions.length}
+					<div>
+					<CongratsMessage score={score} totalQuestions={questions.length}/>
+					</div>
+					}
 			</div>
 		</div>
 	)

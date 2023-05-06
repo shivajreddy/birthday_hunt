@@ -3,8 +3,8 @@ import React from 'react';
 const CongratsMessage = ({ score, totalQuestions }) => {
   return (
     <div>
-      <p>Congratulations, you have completed the quiz!</p>
-      <p>Your final score is: {score}/{totalQuestions}</p>
+      <p>Time to get your gift!</p>
+      <p>Where is the last place you </p>
     </div>
   );
 };
